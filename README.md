@@ -69,6 +69,9 @@ A `random_string` suffix is used to ensure global uniqueness for storage and sea
 - TLS 1.2 enforced on storage
 - Key Vault used for secret storage
 - Public network access minimized where possible
+- Function App uses **System Assigned Managed Identity**
+- Key Vault access granted via **least privilege** (Get/List only)
+- No secrets stored in code or pipeline variables
 
 ### Observability
 - Log Analytics workspace deployed
@@ -127,14 +130,7 @@ File name: screenshots/01-resource-group-overview.png
 
 ## 5. Terraform Plan Output
 
-<!-- 
-PLACE SCREENSHOT HERE:
-Terminal showing:
 
-Plan: 8 to add, 0 to change, 0 to destroy
-
-File name: screenshots/05-terraform-plan.png
--->
 
 ![Alt Text](https://i.imgur.com/RUNdBk2.png)
 
@@ -145,6 +141,15 @@ File name: screenshots/05-terraform-plan.png
 ![Alt Text](https://i.imgur.com/vYbwC75.png)
 
 ---
+## 7. Function App Managed Identity
+
+![Alt Text](https://i.imgur.com/3CLycmU.png)
+
+---
+
+## 8. Key Vault Access Policies
+
+![Alt Text](https://i.imgur.com/H1aiUUs.png)
 
 ## Future Enhancements (Phase 2)
 
