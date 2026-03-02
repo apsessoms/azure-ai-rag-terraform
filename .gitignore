@@ -1,0 +1,9 @@
+#the .gitignore file is used to specify files and directories that should be ignored by Git when committing changes to the repository. In this case, the .gitignore file is configured to ignore the following:
+
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+.terraform.lock.hcl
+
