@@ -72,6 +72,7 @@ A `random_string` suffix is used to ensure global uniqueness for storage and sea
 - Function App uses **System Assigned Managed Identity**
 - Key Vault access granted via **least privilege** (Get/List only)
 - No secrets stored in code or pipeline variables
+- **AI Search audit logs and metrics are streamed to Log Analytics** to support monitoring, investigation, and compliance in environments handling PII.
 
 ### Observability
 - Log Analytics workspace deployed
@@ -150,6 +151,16 @@ File name: screenshots/01-resource-group-overview.png
 ## 8. Key Vault Access Policies
 
 ![Alt Text](https://i.imgur.com/H1aiUUs.png)
+
+## 9. AI Search Diagnostic Settings (Audit + Metrics)
+
+<!-- 
+PLACE SCREENSHOT HERE:
+Azure Portal → AI Search → Diagnostic settings
+Show the "search-diagnostics" setting sending logs/metrics to Log Analytics
+File name: screenshots/09-search-diagnostics.png
+-->
+![Alt Text](https://i.imgur.com/7W9zQOR.png)
 
 ## Future Enhancements (Phase 2)
 
